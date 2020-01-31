@@ -6,6 +6,7 @@ package com.mvit.compilerjava;
 
 import java.io.IOException;
 import java.util.Arrays;
+import java.util.Date;
 
 import javax.tools.DiagnosticCollector;
 import javax.tools.JavaCompiler;
@@ -25,6 +26,6 @@ public class DiagnosticCollectorCompile {
         null, compilationUnits);
     boolean success = task.call();
     fileManager.close();
-    System.out.println("Success: " + success);
+    System.out.println("Success: " +  new Date() +" " + success);
   }
 }
