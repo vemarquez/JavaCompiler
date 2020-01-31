@@ -26,7 +26,7 @@ public class DiagnosticCollectorCompile {
         null, compilationUnits);
     boolean success = task.call();
     fileManager.close();
-    System.out.println("Success: " +  new Date() +" " + success);
-    //System.out.println("Success: "  + success);
+    //System.out.println("Success: " +  new Date() +" " + success);
+    System.out.println("Success: "  + success);
   }
 }
